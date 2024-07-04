@@ -19,7 +19,7 @@ const App = () => {
         setAccount(accounts[0]);
 
         const networkId = await web3.eth.net.getId();
-        console.log(`Network ID: ${networkId}`); // Affiche l'ID du réseau dans la console
+        console.log(`Network ID: ${networkId}`); 
         const deployedNetwork = Crowdfunding.networks[networkId];
         if (deployedNetwork) {
           const instance = new web3.eth.Contract(
